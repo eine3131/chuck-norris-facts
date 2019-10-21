@@ -22,6 +22,7 @@
       <p>Reload for another joke!</p>
       <div class="content" id="chuck-norris">
       </div>
+      <button id="button" style="width: auto; height: 30px;">View other joke</button>
     </div>
 
   </section>
@@ -49,6 +50,8 @@ function fetchchuckNorrisJSON() {
     });
 }
 fetchchuckNorrisJSON();
+
+document.getElementById("button").addEventListener("click", fetchchuckNorrisJSON)
   </script>
 </body>
 
